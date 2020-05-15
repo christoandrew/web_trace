@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.21.0 ()
+  creationTimestamp: null
+  labels:
+    io.kompose.service: redisinsight
+  name: redisinsight
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: redisinsight
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.21.0 ()
+      creationTimestamp: null
+      labels:
+        io.kompose.service: redisinsight
+    spec:
+      containers:
+      - image: redislabs/redisinsight
+        imagePullPolicy: ""
+        name: redisinsight
+        ports:
+        - containerPort: 8001
+        resources: {}
+        volumeMounts:
+        - mountPath: /db
+          name: redisinsight-claim0
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - name: redisinsight-claim0
+        persistentVolumeClaim:
+          claimName: redisinsight-claim0
+status: {}

@@ -1,0 +1,30 @@
+{% extends "web/layout.html" %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static "web/css/vendor/ckeditor.css" %}">
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url "web:index" %}">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ article.title }}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row-editor">
+                <div class="editor">
+                    {{ article.content | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static "web/scripts/ckeditor.js" %}"></script>
+    <script src="{% static "web/scripts/editor_preview.js" %}"></script>
+{% endblock %}

@@ -1,0 +1,706 @@
+INFO 2020-05-01 20:38:38,569 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 20:38:38,590 redisinsight_startup Starting webserver...
+INFO 2020-05-01 20:38:38,591 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 20:38:40,029 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 20:38:40,033 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 20:38:40,041 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 20:38:40,084 redisinsight_startup   Applying contenttypes.0001_initial...
+INFO 2020-05-01 20:38:40,103 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,104 redisinsight_startup   Applying auth.0001_initial...
+INFO 2020-05-01 20:38:40,154 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,154 redisinsight_startup   Applying admin.0001_initial...
+INFO 2020-05-01 20:38:40,177 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,178 redisinsight_startup   Applying admin.0002_logentry_remove_auto_add...
+INFO 2020-05-01 20:38:40,203 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,203 redisinsight_startup   Applying admin.0003_logentry_add_action_flag_choices...
+INFO 2020-05-01 20:38:40,231 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,232 redisinsight_startup   Applying contenttypes.0002_remove_content_type_name...
+INFO 2020-05-01 20:38:40,268 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,268 redisinsight_startup   Applying auth.0002_alter_permission_name_max_length...
+INFO 2020-05-01 20:38:40,289 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,289 redisinsight_startup   Applying auth.0003_alter_user_email_max_length...
+INFO 2020-05-01 20:38:40,318 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,319 redisinsight_startup   Applying auth.0004_alter_user_username_opts...
+INFO 2020-05-01 20:38:40,348 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,349 redisinsight_startup   Applying auth.0005_alter_user_last_login_null...
+INFO 2020-05-01 20:38:40,376 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,376 redisinsight_startup   Applying auth.0006_require_contenttypes_0002...
+INFO 2020-05-01 20:38:40,387 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,387 redisinsight_startup   Applying auth.0007_alter_validators_add_error_messages...
+INFO 2020-05-01 20:38:40,412 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,412 redisinsight_startup   Applying auth.0008_alter_user_username_max_length...
+INFO 2020-05-01 20:38:40,439 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,439 redisinsight_startup   Applying auth.0009_alter_user_last_name_max_length...
+INFO 2020-05-01 20:38:40,502 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,505 redisinsight_startup   Applying auth.0010_alter_group_name_max_length...
+INFO 2020-05-01 20:38:40,546 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,547 redisinsight_startup   Applying auth.0011_update_proxy_permissions...
+INFO 2020-05-01 20:38:40,568 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,568 redisinsight_startup   Applying authtoken.0001_initial...
+INFO 2020-05-01 20:38:40,591 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,591 redisinsight_startup   Applying authtoken.0002_auto_20160226_1747...
+INFO 2020-05-01 20:38:40,637 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,637 redisinsight_startup   Applying core.0001_initial...
+INFO 2020-05-01 20:38:40,750 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,750 redisinsight_startup   Applying recommendation.0001_initial...
+INFO 2020-05-01 20:38:40,783 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,783 redisinsight_startup   Applying recommendation.0002_recommendation__params...
+INFO 2020-05-01 20:38:40,808 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,808 redisinsight_startup   Applying recommendation.0003_auto_20180710_0953...
+INFO 2020-05-01 20:38:40,820 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,820 redisinsight_startup   Applying core.0002_auto_20180529_1220...
+INFO 2020-05-01 20:38:40,847 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,848 redisinsight_startup   Applying core.0003_instances_is_deleted...
+INFO 2020-05-01 20:38:40,868 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,869 redisinsight_startup   Applying core.0004_usedmemorybyinstance...
+INFO 2020-05-01 20:38:40,908 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,909 redisinsight_startup   Applying core.0005_auto_20180605_0658...
+INFO 2020-05-01 20:38:40,942 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,942 redisinsight_startup   Applying core.0006_auto_20180605_1058...
+INFO 2020-05-01 20:38:40,960 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,961 redisinsight_startup   Applying core.0007_instanceprofile_file_name...
+INFO 2020-05-01 20:38:40,990 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:40,990 redisinsight_startup   Applying core.0008_auto_20180705_1713...
+INFO 2020-05-01 20:38:41,059 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,060 redisinsight_startup   Applying core.0009_auto_20180709_0805...
+INFO 2020-05-01 20:38:41,126 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,127 redisinsight_startup   Applying core.0010_auto_20180710_0456...
+INFO 2020-05-01 20:38:41,206 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,207 redisinsight_startup   Applying core.0011_auto_20180710_1002...
+INFO 2020-05-01 20:38:41,231 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,232 redisinsight_startup   Applying core.0012_auto_20180710_1144...
+INFO 2020-05-01 20:38:41,247 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,247 redisinsight_startup   Applying core.0013_auto_20180731_1205...
+INFO 2020-05-01 20:38:41,307 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,308 redisinsight_startup   Applying core.0014_auto_20180731_2005...
+INFO 2020-05-01 20:38:41,332 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,332 redisinsight_startup   Applying core.0015_auto_20180816_1220...
+INFO 2020-05-01 20:38:41,361 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,361 redisinsight_startup   Applying core.0016_rdbtoolsversion...
+INFO 2020-05-01 20:38:41,381 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,382 redisinsight_startup   Applying core.0017_reshardclusterjob...
+INFO 2020-05-01 20:38:41,411 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,411 redisinsight_startup   Applying core.0018_remove_reshardclusterjob_user...
+INFO 2020-05-01 20:38:41,444 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,445 redisinsight_startup   Applying core.0019_instanceattributes...
+INFO 2020-05-01 20:38:41,463 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,464 redisinsight_startup   Applying core.0019_auto_20180920_1448...
+INFO 2020-05-01 20:38:41,504 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,504 redisinsight_startup   Applying core.0020_merge_20180922_0703...
+INFO 2020-05-01 20:38:41,516 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,516 redisinsight_startup   Applying core.0021_auto_20180928_1010...
+INFO 2020-05-01 20:38:41,549 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,550 redisinsight_startup   Applying core.0022_backgroundtask_seen_result...
+INFO 2020-05-01 20:38:41,572 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,573 redisinsight_startup   Applying core.0023_auto_20181128_1139...
+INFO 2020-05-01 20:38:41,606 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,607 redisinsight_startup   Applying core.0024_auto_20181204_1330...
+INFO 2020-05-01 20:38:41,646 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,646 redisinsight_startup   Applying core.0025_remove_instances_db_number...
+INFO 2020-05-01 20:38:41,669 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,670 redisinsight_startup   Applying core.0026_licensekey_tag...
+INFO 2020-05-01 20:38:41,691 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,692 redisinsight_startup   Applying core.0027_auto_20190126_1458...
+INFO 2020-05-01 20:38:41,749 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,750 redisinsight_startup   Applying core.0028_auto_20190211_0734...
+INFO 2020-05-01 20:38:41,907 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,908 redisinsight_startup   Applying browser.0001_initial...
+INFO 2020-05-01 20:38:41,979 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:41,979 redisinsight_startup   Applying browser.0002_auto_20180516_1531...
+INFO 2020-05-01 20:38:42,011 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,011 redisinsight_startup   Applying browser.0003_auto_20180821_0959...
+INFO 2020-05-01 20:38:42,092 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,092 redisinsight_startup   Applying browser.0004_remove_bulkoperationjob_user...
+INFO 2020-05-01 20:38:42,135 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,136 redisinsight_startup   Applying browser.0005_restorejobs...
+INFO 2020-05-01 20:38:42,197 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,198 redisinsight_startup   Applying browser.0006_auto_20190409_0701...
+INFO 2020-05-01 20:38:42,308 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,309 redisinsight_startup   Applying cluster_management.0001_initial...
+INFO 2020-05-01 20:38:42,333 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,334 redisinsight_startup   Applying cluster_management.0002_fixclusterjob...
+INFO 2020-05-01 20:38:42,358 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,359 redisinsight_startup   Applying core.0029_instances_uuid...
+INFO 2020-05-01 20:38:42,415 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,416 redisinsight_startup   Applying core.0030_userpermisson...
+INFO 2020-05-01 20:38:42,445 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,446 redisinsight_startup   Applying core.0031_auto_20190625_0842...
+INFO 2020-05-01 20:38:42,480 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,481 redisinsight_startup   Applying core.0032_delete_licensekey...
+INFO 2020-05-01 20:38:42,504 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,504 redisinsight_startup   Applying core.0033_instances_db_num_supported...
+INFO 2020-05-01 20:38:42,537 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,538 redisinsight_startup   Applying core.0034_auto_20190925_2119...
+INFO 2020-05-01 20:38:42,564 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,565 redisinsight_startup   Applying core.0035_userpermisson_eula_accepted...
+INFO 2020-05-01 20:38:42,626 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,628 redisinsight_startup   Applying core.0036_auto_20191007_1129...
+INFO 2020-05-01 20:38:42,695 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,695 redisinsight_startup   Applying core.0037_auto_20191009_1444...
+INFO 2020-05-01 20:38:42,732 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,733 redisinsight_startup   Applying core.0038_auto_20191009_1446...
+INFO 2020-05-01 20:38:42,750 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,751 redisinsight_startup   Applying core.0039_installationid...
+INFO 2020-05-01 20:38:42,766 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,766 redisinsight_startup   Applying core.0040_auto_20200107_0421...
+INFO 2020-05-01 20:38:42,826 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,827 redisinsight_startup   Applying core.0041_rediscloudinstances...
+INFO 2020-05-01 20:38:42,851 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,852 redisinsight_startup   Applying core.0042_auto_20200118_1705...
+INFO 2020-05-01 20:38:42,890 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,891 redisinsight_startup   Applying core.0043_auto_20200212_1414...
+INFO 2020-05-01 20:38:42,930 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,930 redisinsight_startup   Applying core.0044_auto_20200415_0907...
+INFO 2020-05-01 20:38:42,971 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:42,972 redisinsight_startup   Applying memory_analysis.0001_initial...
+INFO 2020-05-01 20:38:43,025 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,025 redisinsight_startup   Applying memory_analysis.0002_remove_analyzeinstancejob_user...
+INFO 2020-05-01 20:38:43,065 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,065 redisinsight_startup   Applying profiling.0001_initial...
+INFO 2020-05-01 20:38:43,096 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,097 redisinsight_startup   Applying profiling.0002_auto_20180803_1447...
+INFO 2020-05-01 20:38:43,204 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,204 redisinsight_startup   Applying profiling.0003_auto_20180815_1157...
+INFO 2020-05-01 20:38:43,259 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,259 redisinsight_startup   Applying profiling.0004_instanceprofile_parent...
+INFO 2020-05-01 20:38:43,342 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,343 redisinsight_startup   Applying profiling.0005_auto_20180815_1231...
+INFO 2020-05-01 20:38:43,386 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,387 redisinsight_startup   Applying profiling.0006_auto_20180821_0954...
+INFO 2020-05-01 20:38:43,423 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,423 redisinsight_startup   Applying profiling.0007_instanceprofile_username...
+INFO 2020-05-01 20:38:43,457 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,458 redisinsight_startup   Applying sessions.0001_initial...
+INFO 2020-05-01 20:38:43,476 redisinsight_startup  OK
+
+INFO 2020-05-01 20:38:43,839 redisinsight_startup Starting waitress
+INFO 2020-05-01 20:44:52,306 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 20:44:52,308 redisinsight_startup waitress server exited
+INFO 2020-05-01 20:46:55,539 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 20:46:55,553 redisinsight_startup Starting webserver...
+INFO 2020-05-01 20:46:55,554 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 20:46:56,594 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 20:46:56,597 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 20:46:56,631 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 20:46:56,631 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 20:46:56,858 redisinsight_startup Starting waitress
+INFO 2020-05-01 20:49:09,630 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 20:49:09,632 redisinsight_startup waitress server exited
+INFO 2020-05-01 20:49:12,666 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 20:49:12,676 redisinsight_startup Starting webserver...
+INFO 2020-05-01 20:49:12,677 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 20:49:13,350 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 20:49:13,353 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 20:49:13,375 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 20:49:13,376 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 20:49:13,531 redisinsight_startup Starting waitress
+INFO 2020-05-01 20:55:48,373 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 20:55:48,382 redisinsight_startup waitress server exited
+INFO 2020-05-01 20:56:12,369 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 20:56:12,398 redisinsight_startup Starting webserver...
+INFO 2020-05-01 20:56:12,400 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 20:56:13,257 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 20:56:13,260 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 20:56:13,296 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 20:56:13,297 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 20:56:13,474 redisinsight_startup Starting waitress
+INFO 2020-05-01 20:56:32,142 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 20:56:32,144 redisinsight_startup waitress server exited
+INFO 2020-05-01 20:56:35,290 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 20:56:35,300 redisinsight_startup Starting webserver...
+INFO 2020-05-01 20:56:35,301 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 20:56:35,961 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 20:56:35,964 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 20:56:35,991 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 20:56:35,992 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 20:56:36,181 redisinsight_startup Starting waitress
+INFO 2020-05-01 21:06:32,115 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 21:06:32,131 redisinsight_startup waitress server exited
+INFO 2020-05-01 21:06:51,221 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 21:06:51,234 redisinsight_startup Starting webserver...
+INFO 2020-05-01 21:06:51,234 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 21:06:52,162 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 21:06:52,165 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 21:06:52,209 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 21:06:52,210 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 21:06:52,430 redisinsight_startup Starting waitress
+INFO 2020-05-01 21:11:45,819 redisinsight Created installation ID: 'c0b9c0547caf40c99b61c9fd4ce1bb05'
+INFO 2020-05-01 21:11:46,015 redisinsight Successfully created global permissions.
+INFO 2020-05-01 21:11:46,037 redisinsight Successfully created global permissions.
+INFO 2020-05-01 21:11:46,039 redisinsight Initialized index.html cache
+INFO 2020-05-01 21:16:45,507 redisinsight Initialized index.html cache
+INFO 2020-05-01 21:16:58,578 redisinsight Initialized index.html cache
+INFO 2020-05-01 21:17:07,616 redisinsight Initialized index.html cache
+INFO 2020-05-01 21:18:14,309 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 21:18:20,570 redisinsight Successfully reported database statistics
+INFO 2020-05-01 21:18:45,896 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 21:20:15,807 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 21:20:34,419 redisinsight Snapshot request initiated for instance 1
+INFO 2020-05-01 21:20:34,467 redisinsight New AnalyzeInstanceJob created (AnalyzeInstanceJob ID: 7a71c6cc-0cf2-4b3d-bb01-492224febf82) for instance ID 1, snapshot ID c2f7e141-e15e-4fc3-b84c-cc0434c2cfbc
+INFO 2020-05-01 21:20:34,469 redisinsight Started analyze instance job (AnalyzeInstanceJob ID: 7a71c6cc-0cf2-4b3d-bb01-492224febf82)
+INFO 2020-05-01 21:20:34,525 redisinsight Downloading RDB File...
+INFO 2020-05-01 21:20:34,589 redisinsight Finished downloading RDB File at path /db/rsnaps/c2f7e141-e15e-4fc3-b84c-cc0434c2cfbc0.rdb
+INFO 2020-05-01 21:20:34,590 redisinsight Finished downloading all RDB files
+INFO 2020-05-01 21:20:34,591 redisinsight Starting analysis
+INFO 2020-05-01 21:20:34,592 redisinsight Generating rsnap file:
+
+INFO 2020-05-01 21:20:34,594 redisinsight Using log file /tmp/15cf15b1391844699e2696063da4c03b for rdbMemoryAnalysis
+INFO 2020-05-01 21:20:34,652 redisinsight librdb logs:
+
+INFO 2020-05-01 21:20:34,655 redisinsight RSNAP created, proceeding with post-processing...
+INFO 2020-05-01 21:20:34,687 redisinsight Analyzing key patterns...
+INFO 2020-05-01 21:20:34,688 redisinsight Detected SQLite version 3.27.2. Using Python implementation to get key patterns
+INFO 2020-05-01 21:20:34,690 redisinsight Indexing keys...
+INFO 2020-05-01 21:20:34,705 redisinsight Computing stats...
+INFO 2020-05-01 21:20:34,720 redisinsight Finished analyzing (AnalyzeInstanceJob ID: 7a71c6cc-0cf2-4b3d-bb01-492224febf82). Generating recommendations...
+INFO 2020-05-01 21:20:34,728 redisinsight Finished generating recommendations (AnalyzeInstanceJob ID: 7a71c6cc-0cf2-4b3d-bb01-492224febf82)
+INFO 2020-05-01 21:30:18,169 redisinsight Initialized index.html cache
+INFO 2020-05-01 21:30:21,649 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 23:03:46,894 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 23:03:46,901 redisinsight_startup waitress server exited
+INFO 2020-05-01 23:04:08,018 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 23:04:08,036 redisinsight_startup Starting webserver...
+INFO 2020-05-01 23:04:08,037 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 23:04:08,938 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 23:04:08,940 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 23:04:08,969 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 23:04:08,969 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 23:04:09,313 redisinsight_startup Starting waitress
+INFO 2020-05-01 23:05:55,287 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 23:05:55,299 redisinsight_startup waitress server exited
+INFO 2020-05-01 23:06:20,303 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 23:06:20,327 redisinsight_startup Starting webserver...
+INFO 2020-05-01 23:06:20,328 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 23:06:21,059 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 23:06:21,062 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 23:06:21,091 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 23:06:21,092 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 23:06:21,273 redisinsight_startup Starting waitress
+INFO 2020-05-01 23:12:06,573 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 23:12:06,577 redisinsight_startup waitress server exited
+INFO 2020-05-01 23:12:48,680 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 23:12:48,701 redisinsight_startup Starting webserver...
+INFO 2020-05-01 23:12:48,702 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 23:12:49,604 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 23:12:49,608 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 23:12:49,651 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 23:12:49,652 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 23:12:49,896 redisinsight_startup Starting waitress
+INFO 2020-05-01 23:15:11,977 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 23:15:11,979 redisinsight_startup waitress server exited
+INFO 2020-05-01 23:15:29,760 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 23:15:29,774 redisinsight_startup Starting webserver...
+INFO 2020-05-01 23:15:29,775 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 23:15:30,732 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 23:15:30,735 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 23:15:30,764 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 23:15:30,764 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 23:15:30,941 redisinsight_startup Starting waitress
+INFO 2020-05-01 23:16:50,729 redisinsight Initialized index.html cache
+INFO 2020-05-01 23:16:56,588 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 23:25:00,029 redisinsight Initialized index.html cache
+INFO 2020-05-01 23:25:40,034 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 23:25:40,044 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+ERROR 2020-05-01 23:27:20,360 django.request Internal Server Error: /api/instance/1840d8f7-1a40-48be-8f34-993b7f3c4cf9/redis-info/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "./redisinsight/core/middleware.py", line 78, in __call__
+  File "./redisinsight/core/middleware.py", line 59, in _initialize_installation_id
+  File "./redisinsight/core/services/analytics.py", line 152, in check_installation_id_exists
+  File "./redisinsight/core/models.py", line 719, in installation_id_exists
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1131, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+ERROR 2020-05-01 23:37:56,186 django.request Internal Server Error: /instance/1840d8f7-1a40-48be-8f34-993b7f3c4cf9/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "./redisinsight/core/middleware.py", line 78, in __call__
+  File "./redisinsight/core/middleware.py", line 59, in _initialize_installation_id
+  File "./redisinsight/core/services/analytics.py", line 152, in check_installation_id_exists
+  File "./redisinsight/core/models.py", line 719, in installation_id_exists
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1131, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+ERROR 2020-05-01 23:37:56,644 django.request Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "./redisinsight/core/middleware.py", line 78, in __call__
+  File "./redisinsight/core/middleware.py", line 59, in _initialize_installation_id
+  File "./redisinsight/core/services/analytics.py", line 152, in check_installation_id_exists
+  File "./redisinsight/core/models.py", line 719, in installation_id_exists
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1131, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+ERROR 2020-05-01 23:37:58,085 django.request Internal Server Error: /instance/1840d8f7-1a40-48be-8f34-993b7f3c4cf9/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "./redisinsight/core/middleware.py", line 78, in __call__
+  File "./redisinsight/core/middleware.py", line 59, in _initialize_installation_id
+  File "./redisinsight/core/services/analytics.py", line 152, in check_installation_id_exists
+  File "./redisinsight/core/models.py", line 719, in installation_id_exists
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1131, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+ERROR 2020-05-01 23:37:58,321 django.request Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "./redisinsight/core/middleware.py", line 78, in __call__
+  File "./redisinsight/core/middleware.py", line 59, in _initialize_installation_id
+  File "./redisinsight/core/services/analytics.py", line 152, in check_installation_id_exists
+  File "./redisinsight/core/models.py", line 719, in installation_id_exists
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1131, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+ERROR 2020-05-01 23:37:59,852 django.request Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "./redisinsight/core/middleware.py", line 78, in __call__
+  File "./redisinsight/core/middleware.py", line 59, in _initialize_installation_id
+  File "./redisinsight/core/services/analytics.py", line 152, in check_installation_id_exists
+  File "./redisinsight/core/models.py", line 719, in installation_id_exists
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/query.py", line 392, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 504, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 489, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1131, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+    return self._cursor()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 194, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+INFO 2020-05-01 23:38:48,245 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-01 23:38:48,248 redisinsight_startup waitress server exited
+INFO 2020-05-01 23:39:01,571 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-01 23:39:01,598 redisinsight_startup Starting webserver...
+INFO 2020-05-01 23:39:01,599 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-01 23:39:02,916 redisinsight_startup Operations to perform:
+
+INFO 2020-05-01 23:39:02,920 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-01 23:39:02,949 redisinsight_startup Running migrations:
+
+INFO 2020-05-01 23:39:02,949 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-01 23:39:03,114 redisinsight_startup Starting waitress
+INFO 2020-05-01 23:39:41,342 redisinsight Initialized index.html cache
+INFO 2020-05-01 23:39:46,238 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-01 23:40:03,437 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.

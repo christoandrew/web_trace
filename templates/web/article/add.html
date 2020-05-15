@@ -1,0 +1,53 @@
+{% extends "web/layout.html" %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static "web/css/vendor/ckeditor.css" %}">
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url "web:index" %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% url "web:topic" topic.id %}">{{ topic.title }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Add Article</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form class="" method="post" action="{% url "web:add_article" topic.id %}"
+                  enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="title">
+                    Title
+                </label>
+                <label>
+                    <input type="text" name="title" class="form-control"/>
+                </label>
+                <label for="title">
+                    Description
+                </label>
+                <label>
+                    <input type="text" name="description" class="form-control"/>
+                </label>
+                <div class="row-editor">
+                    <label for="content">
+                        Content
+                    </label>
+                    <textarea class="editor" id="content" name="content">
+                    </textarea>
+                </div>
+                <button type="submit" class="btn btn-info form-control button-form"
+                        style="background-color: #2f96b4 !important;">
+                    Save
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{% static "web/scripts/ckeditor.js" %}"></script>
+    <script src="{% static "web/scripts/editor.js" %}"></script>
+{% endblock %}

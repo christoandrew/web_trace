@@ -1,0 +1,119 @@
+INFO 2020-05-02 09:16:06,777 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-02 09:16:06,795 redisinsight_startup waitress server exited
+INFO 2020-05-02 09:33:49,242 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-02 09:33:49,257 redisinsight_startup Starting webserver...
+INFO 2020-05-02 09:33:49,257 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-02 09:33:50,138 redisinsight_startup Operations to perform:
+
+INFO 2020-05-02 09:33:50,142 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-02 09:33:50,176 redisinsight_startup Running migrations:
+
+INFO 2020-05-02 09:33:50,177 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-02 09:33:50,382 redisinsight_startup Starting waitress
+INFO 2020-05-02 09:34:05,597 redisinsight Initialized index.html cache
+INFO 2020-05-02 09:34:06,666 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 09:54:23,234 redisinsight Initialized index.html cache
+INFO 2020-05-02 09:54:24,234 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 09:54:24,270 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+ERROR 2020-05-02 09:54:24,382 redisinsight Connection error while connecting to redis instance: Error -2 connecting to web_trace_redis_1:6379. Name or service not known.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 579, in _connect
+    socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./redisinsight/utils/__init__.py", line 171, in _wrapped_view
+  File "./redisinsight/redisearch/decorators.py", line 37, in _wrapped_view
+  File "./redisinsight/utils/__init__.py", line 263, in get_redis_connection
+  File "./redisinsight/utils/__init__.py", line 296, in redis_connection
+  File "./redisinsight/utils/__init__.py", line 937, in get_connection
+  File "./redisinsight/utils/__init__.py", line 877, in _create_new_connection
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1183, in client_setname
+    return self.execute_command('CLIENT SETNAME', name)
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to web_trace_redis_1:6379. Name or service not known.
+ERROR 2020-05-02 09:54:24,383 redisinsight Connection error while connecting to redis instance: Error -2 connecting to web_trace_redis_1:6379. Name or service not known.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 579, in _connect
+    socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./redisinsight/utils/__init__.py", line 171, in _wrapped_view
+  File "./redisinsight/redisearch/decorators.py", line 37, in _wrapped_view
+  File "./redisinsight/utils/__init__.py", line 263, in get_redis_connection
+  File "./redisinsight/utils/__init__.py", line 296, in redis_connection
+  File "./redisinsight/utils/__init__.py", line 937, in get_connection
+  File "./redisinsight/utils/__init__.py", line 877, in _create_new_connection
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 1183, in client_setname
+    return self.execute_command('CLIENT SETNAME', name)
+  File "/usr/local/lib/python3.6/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.6/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to web_trace_redis_1:6379. Name or service not known.
+ERROR 2020-05-02 09:54:24,391 django.request Unknown Status Code: /api/instance/1840d8f7-1a40-48be-8f34-993b7f3c4cf9/all-index/
+ERROR 2020-05-02 09:54:24,391 django.request Unknown Status Code: /api/instance/1840d8f7-1a40-48be-8f34-993b7f3c4cf9/check-redisearch-module-loaded/
+INFO 2020-05-02 10:10:26,941 redisinsight Initialized index.html cache
+INFO 2020-05-02 10:10:27,813 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 10:10:31,401 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 10:10:35,172 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 10:10:35,178 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 10:10:35,179 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 10:10:57,208 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 10:10:57,215 redisinsight Connection for web_trace_redis_1:6379 not found in cache. Creating new connection.
+INFO 2020-05-02 11:37:49,472 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-02 11:37:49,477 redisinsight_startup waitress server exited
+INFO 2020-05-02 11:37:52,412 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-02 11:37:52,422 redisinsight_startup Starting webserver...
+INFO 2020-05-02 11:37:52,423 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-02 11:37:53,089 redisinsight_startup Operations to perform:
+
+INFO 2020-05-02 11:37:53,093 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-02 11:37:53,114 redisinsight_startup Running migrations:
+
+INFO 2020-05-02 11:37:53,115 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-02 11:37:53,278 redisinsight_startup Starting waitress
+INFO 2020-05-02 11:41:10,803 redisinsight Initialized index.html cache
+INFO 2020-05-02 11:57:01,289 redisinsight Initialized index.html cache
+INFO 2020-05-02 11:59:39,498 redisinsight Initialized index.html cache
+INFO 2020-05-02 12:02:14,795 redisinsight Initialized index.html cache
+INFO 2020-05-02 12:11:24,786 redisinsight Initialized index.html cache
+INFO 2020-05-02 12:19:38,471 redisinsight Initialized index.html cache
+INFO 2020-05-02 13:12:14,484 redisinsight_startup Registered SIGTERM handler
+INFO 2020-05-02 13:12:14,518 redisinsight_startup Starting webserver...
+INFO 2020-05-02 13:12:14,518 redisinsight_startup Visit http://0.0.0.0:8001 in your web browser. Press CTRL-C to exit.
+INFO 2020-05-02 13:12:16,092 redisinsight_startup Operations to perform:
+
+INFO 2020-05-02 13:12:16,095 redisinsight_startup   Apply all migrations: admin, auth, authtoken, browser, cluster_management, contenttypes, core, memory_analysis, profiling, recommendation, sessions
+
+INFO 2020-05-02 13:12:16,119 redisinsight_startup Running migrations:
+
+INFO 2020-05-02 13:12:16,119 redisinsight_startup   No migrations to apply.
+
+INFO 2020-05-02 13:12:16,304 redisinsight_startup Starting waitress
+INFO 2020-05-02 20:19:32,060 redisinsight_startup Received SIGTERM. RedisInsight is shutting down.
+INFO 2020-05-02 20:19:32,069 redisinsight_startup waitress server exited

@@ -1,0 +1,53 @@
+{% extends "web/layout.html" %}
+{% block  content %}
+    <div class="row-fluid">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url "web:index" %}">Home</a></li>
+                        <li class="breadcrumb-item">{{ topic.title }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                <p class="lead">{{ topic.description }}</p>
+            </div>
+            <div class="col-md-3">
+                <div style="position: absolute; right: 13px">
+                    <a href="{% url "web:add_article" topic.id %}"
+                       class="btn btn-sm btn-success">Add Article
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="todo">
+                <div class="todo-search">
+                    <input class="todo-search-field" type="search" value="" placeholder="Search">
+                </div>
+                <ul>
+                    {% for article in articles %}
+                        <li class="todo-done">
+                            <a href="{% url "web:article" article.id %}">
+                                <div class="todo-icon fui-user"></div>
+                                <div class="todo-content">
+                                    <h4 class="todo-name">
+                                        {{ article.title }}
+                                    </h4>
+                                    {{ article.description }}
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

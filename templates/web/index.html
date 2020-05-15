@@ -1,0 +1,51 @@
+{% extends "web/layout.html" %}
+{% block content %}
+    <div class="row">
+        <h3>Learn</h3>
+        <div class="container my-4">
+
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            class="fui-arrow-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            class="fui-arrow-right"></i></a>
+                </div>
+                <!--/.Controls-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    {% if slide_one %}
+                        <div class="carousel-item active">
+                            <div class="row">
+                                {% for topic in slide_one %}
+                                    <div class="col-md-4">
+                                        <div class="card mb-2">
+                                            <img class="card-img-top"
+                                                 src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                                 alt="Card image cap">
+                                            <div class="card-body">
+                                                <div>
+                                                    <h4 class="card-title" style="display: inline-block; margin: 0">
+                                                        {{ topic.title }}
+                                                    </h4>
+                                                    <a class="btn btn-primary" style="float: right" href="{% url "web:topic" topic.id %}">Enroll</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
+        </div>
+    </div>
+{% endblock %}

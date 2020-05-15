@@ -1,0 +1,151 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  web:
+    build: .
+    container_name: web_trace
+    command: python manage.py runserver 0.0.0.0:8000 --settings=web_trace.ci
+    volumes:
+      - .:/opt/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgAdmin
+    environment:
+      - PGADMIN_DEFAULT_PASSWORD=root
+      - PGADMIN_DEFAULT_EMAIL=admin@webtrace.com
+      - PGADMIN_LISTEN_ADDRESS=0.0.0.0
+      - PGADMIN_LISTEN_PORT=4041
+    ports:
+      - "5050:4041"
+    depends_on:
+      - db
+
+#  elasticsearch:
+#    image: elasticsearch
+#    environment:
+#      - discovery.type=single-node
+#    ports:
+#      - "9200:9200"
+#      - "9300:9300"
+#    volumes:
+#      - "es_data:/usr/share/elasticsearch/data"
+
+#  kibana:
+#    image: docker.elastic.co/kibana/kibana:7.6.2
+#    environment:
+#      - ELASTICSEARCH_HOSTS=elasticsearch
+#    ports:
+#      - "5601:5601"
+#    volumes:
+#      - ./docker/kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
+#    depends_on:
+#      - elasticsearch
+
+  redis:
+    build: docker/redis
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+    volumes:
+      - ./docker/redis-data:/var/lib/redis
+      - ./docker/redis/redis.log:/var/log/redis/redis.log
+
+  redisinsight:
+    image: redislabs/redisinsight
+    container_name: redisinsight
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./docker/redisinsight:/db
+    depends_on:
+      - redis
+
+  nginx:
+    build: docker/nginx
+    container_name: nginx
+    ports:
+      - "9051:80"
+      - "9052:8080"
+      - "9053:8081"
+      - "9054:8082"
+    volumes:
+      - ./docker/nginx/logs/access.log:/etc/nginx/logs/access.log
+      - ./docker/nginx/logs/error.log:/etc/nginx/logs/error.log
+      - ./docker/nginx/logs/nginx.pid:/etc/nginx/logs/nginx.pid
+    depends_on:
+      - web
+      - redisinsight
+      - pgadmin
+
+  graphana:
+    build: docker/graphana
+    container_name: graphana
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+      - GF_PATHS_CONFIG=/usr/local/etc/grafana/grafana.ini
+    volumes:
+      - ./docker/graphana/graphana-storage:/var/lib/grafana
+      - ./docker/graphana/graphana.log:/var/log/grafana/grafana.log
+    ports:
+      - "3031:3031"
+
+#  portainer:
+#    image: portainer/portainer
+#    container_name: portainer
+#    ports:
+#      - "8009:8000"
+#      - "9000:9000"
+#    volumes:
+#      - ./docker/portainer_data:/data
+#      - /var/run/docker.sock:/var/run/docker.sock
+
+  elk:
+    image: sebp/elk
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "5044:5044"
+
+  registry:
+    restart: always
+    image: registry:2
+    ports:
+      - 5000:5000
+    environment:
+      REGISTRY_HTTP_TLS_CERTIFICATE: /certs/domain.crt
+      REGISTRY_HTTP_TLS_KEY: /certs/domain.key
+      REGISTRY_AUTH: htpasswd
+      REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
+      REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
+    volumes:
+      - /path/data:/var/lib/registry
+      - /path/certs:/certs
+      - /path/auth:/auth
+
+  portus:
+    image: opensuse/portus
+    environment:
+      - PORTUS_PASSWORD=root
+      - PORTUS_DB_ADAPTER=postgres
+      - PORTUS_DB_HOST=db
+      - PORTUS_DB_USERNAME=postgres
+      - PORTUS_DB_DATABASE=postgres
+    ports:
+      -
+    depends_on:
+      - db
+
+
