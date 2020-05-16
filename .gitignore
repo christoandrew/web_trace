@@ -140,3 +140,14 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+docker/graphana/graphana-storage/
+docker/portainer_data/bin/
+docker/portainer_data/compose/
+docker/portainer_data/tls/
+docker/portus/
+docker/prometheus/
+docker/redis-data/
+docker/redisinsight/bulk_operation/
+docker/redisinsight/dropbox/
+docker/redisinsight/profiler_logs/
+docker/registry/
